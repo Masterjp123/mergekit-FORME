@@ -2,13 +2,13 @@ merge_method: task_arithmetic
 base_model: TheBloke/Llama-2-13B-fp16
 models:
   - model: TheBloke/Llama-2-13B-fp16
-  - model: Undi95/Utopia-13B
+  - model: Kooten/DaringMaid-13B
     parameters:
       weight: 1.0
-  - model: ddh0/OrcaMaid-13b
+  - model: NeverSleep/FlatOrcamaid-13b-v0.2
     parameters:
       weight: 0.45
-  - model: Undi95/Emerhyst-13B
+  - model: Undi95/X-MythoChronos-13B
     parameters:
       weight: 0.33
 dtype: float16
