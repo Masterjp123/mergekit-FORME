@@ -1,0 +1,9 @@
+slices:
+  - sources:
+    - model: cognitivecomputations/dolphin-2.6-mistral-7b
+      layer_range: [0, 30]
+  - sources:
+    - model: Undi95/Toppy-M-7B
+      layer_range: [0, 31]
+merge_method: passthrough
+dtype: float16
