@@ -1,15 +1,15 @@
 slices:
   - sources:
-      - model: psmathur/orca_mini_v3_13b
+      - model: Undi95/Utopia-13B
         layer_range: [0, 40]
-      - model: garage-bAInd/Platypus2-13B
+      - model: ddh0/OrcaMaid-v3-13b-32k
         layer_range: [0, 40]
 # or, the equivalent models: syntax:
 # models:
 #   - model: psmathur/orca_mini_v3_13b
 #   - model: garage-bAInd/Platypus2-13B
 merge_method: slerp
-base_model: psmathur/orca_mini_v3_13b
+base_model: Undi95/Utopia-13B
 parameters:
   t:
     - filter: self_attn
