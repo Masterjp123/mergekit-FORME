@@ -2,7 +2,7 @@ slices:
   - sources:
       - model: Undi95/Utopia-13B
         layer_range: [0, 40]
-      - model: ddh0/OrcaMaid-v3-13b-32k
+      - model: Masterjp123/OrcaMaid-V3-13B-CLEAN
         layer_range: [0, 40]
 # or, the equivalent models: syntax:
 # models:
