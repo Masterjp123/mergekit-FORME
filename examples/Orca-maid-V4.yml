@@ -1,0 +1,16 @@
+slices:
+  - sources:
+      - model: NeverSleep/Noromaid-13B-0.4-DPO
+        layer_range: [0, 40]
+      - model: Locutusque/Orca-2-13b-SFT-v6
+        layer_range: [0, 40]
+merge_method: slerp
+base_model: NeverSleep/Noromaid-13B-0.4-DPO
+parameters:
+  t:
+    - filter: self_attn
+      value: [0, 0.5, 0.3, 0.7, 1]
+    - filter: mlp
+      value: [1, 0.5, 0.7, 0.3, 0]
+    - value: 0.5 # fallback for rest of tensors
+dtype: float16
