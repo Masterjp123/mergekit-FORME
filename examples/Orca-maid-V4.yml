@@ -2,7 +2,7 @@ slices:
   - sources:
       - model: NeverSleep/Noromaid-13B-0.4-DPO
         layer_range: [0, 40]
-      - model: Locutusque/Orca-2-13b-SFT-v6
+      - model: microsoft/Orca-2-13b
         layer_range: [0, 40]
 merge_method: slerp
 base_model: NeverSleep/Noromaid-13B-0.4-DPO
