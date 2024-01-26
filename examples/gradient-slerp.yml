@@ -1,15 +1,15 @@
 slices:
   - sources:
-      - model: Undi95/Utopia-13B
+      - model: Undi95/Unholy-v2-13B
         layer_range: [0, 40]
-      - model: Masterjp123/OrcaMaid-New-V4
+      - model: Masterjp123/EroticOrca-13B
         layer_range: [0, 40]
 # or, the equivalent models: syntax:
 # models:
 #   - model: psmathur/orca_mini_v3_13b
 #   - model: garage-bAInd/Platypus2-13B
 merge_method: slerp
-base_model: Undi95/Utopia-13B
+base_model: Undi95/Unholy-v2-13B
 parameters:
   t:
     - filter: self_attn
