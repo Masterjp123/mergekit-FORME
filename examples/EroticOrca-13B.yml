@@ -1,11 +1,11 @@
 slices:
   - sources:
-      - model: NeverSleep/Noromaid-13B-0.4-DPO
+      - model: KoboldAI/LLaMA2-13B-Erebus-v3
         layer_range: [0, 40]
-      - model: microsoft/Orca-2-13b
+      - model: Locutusque/Orca-2-13b-SFT-v6
         layer_range: [0, 40]
 merge_method: slerp
-base_model: NeverSleep/Noromaid-13B-0.4-DPO
+base_model: KoboldAI/LLaMA2-13B-Erebus-v3
 parameters:
   t:
     - filter: self_attn
