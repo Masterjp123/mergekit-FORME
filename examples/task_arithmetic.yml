@@ -10,5 +10,5 @@ models:
   - model: Undi95/Emerhyst-13B
     parameters:
       weight: 0.33
-dtype: float16
+dtype: bfloat16
 merge_methiod: task_arithmetic
