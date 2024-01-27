@@ -11,3 +11,4 @@ models:
     parameters:
       weight: 0.33
 dtype: float16
+merge_methiod: task_arithmetic
