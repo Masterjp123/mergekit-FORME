@@ -51,6 +51,6 @@ base_model: TheBloke/Llama-2-13B-fp16
 parameters:
   normalize: true
   int8_mask: true
-dtype: float16
+dtype: bfloat16
 name: SnowyRP-13B-L2-Final-V1
 
