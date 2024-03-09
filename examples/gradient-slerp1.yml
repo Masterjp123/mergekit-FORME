@@ -1,0 +1,16 @@
+slices:
+  - sources:
+      - model: cgato/Thespis-13b-DPO-v0.7
+        layer_range: [0, 40]
+      - model: posicube/Llama2-chat-AYT-13B
+        layer_range: [0, 40]
+merge_method: slerp
+base_model: cgato/Thespis-13b-DPO-v0.7
+parameters:
+  t:
+    - filter: self_attn
+      value: [0, 0.5, 0.3, 0.7, 1]
+    - filter: mlp
+      value: [1, 0.5, 0.7, 0.3, 0]
+    - value: 0.5 # fallback for rest of tensors
+dtype: float16
