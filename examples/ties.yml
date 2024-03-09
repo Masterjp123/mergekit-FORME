@@ -1,13 +1,13 @@
 models:
-  - model: Masterjp123/Snowyrp-V2B-P1
+  - model: Masterjp123/SnowyRP-FinalV1-L2-13B
     parameters:
       density: [1, 0.7, 0.1] # density gradient
       weight: 1.0
-  - model: Masterjp123/SnowyRP-FinalV1-L2-13B
+  - model: Masterjp123/Snowyrp-V2F-P1
     parameters:
       density: 0.5
       weight: [0, 0.3, 0.7, 1] # weight gradient
-  - model: sauce1337/BerrySauce-L2-13b
+  - model: Masterjp123/Snowyrp-V2F-P2
     parameters:
       density: 0.33
       weight:
